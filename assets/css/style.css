@@ -10,7 +10,6 @@ header{
     gap: 20px;
     background-color: rgb(255, 0, 0);
     color: white;
-    position: absolute;
     top: 0;
     width: 100%;
     z-index: 2;
@@ -41,9 +40,10 @@ article{
 }
 
 article canvas{
-    width: 100%;
-    height: 100vh;
-    background: rgb(96, 250, 49);
+    width: 480px;
+    height: 720px;
+    background: rgb(185, 70, 221);
+    margin-left: calc(50% - 240px);
 }
 
 article .play{
