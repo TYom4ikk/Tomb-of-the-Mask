@@ -29,7 +29,10 @@ let player = {
     position: {x:0, y:hub.clientHeight },
     speed: size,
     img: new Image(),
-};
+    direction:"";
+}
+
+player.img.src = "assets/img/player/player.png";
 
 play_but.addEventListener("click",function(){
     hideElement(play_but);
@@ -43,7 +46,7 @@ play_but.addEventListener("click",function(){
 
 function render(){
     context.clearRect(0,0,canvas.width, canvas.height);
-    context.fillRect(
+    context.drawImage(player.img,
         player.position.x,
         player.position.y,
         size,
