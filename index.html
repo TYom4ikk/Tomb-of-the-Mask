@@ -3,29 +3,63 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tomb of ZE Mask</title>
     <link rel="stylesheet" href="assets/css/style.css">
-    <title>Tomb of the mask</title>
 </head>
 <body>
     <header>
         <div class="coins">
-            <img src="assets/img/coin.png" alt="coin.png">
-            <p>0</p>
+            <img src="assets/img/icons/Icon=coin.png" alt="">
+            <p>200</p>
         </div>
         <div class="stars">
-            <img src="assets/img/star.webp" alt="star.webp">
-            <img src="assets/img/star.webp" alt="star.webp">
-            <img src="assets/img/star.webp" alt="star.webp">
+            <img src="assets/img/icons/Icon=star.png" alt="">
+            <img src="assets/img/icons/Icon=star.png" alt="">
+            <img src="assets/img/icons/Icon=star.png" alt="">
         </div>
-        <div class="buttons"><p>=</p></div>
+        <div class="button">
+            <p>=</p>
+        </div>
     </header>
-    <article>
-        <button class="play">></button>
+    <main>
+        <section class="play">
+
+            <button onclick="edit()">+</button>
+            <button onclick="play(1)">1</button>
+            <button onclick="play(2)">2</button>
+            <button onclick="play(3)">3</button>
+            <button onclick="play(4)">4</button>
+            <button onclick="play(5)">5</button>
+            <button onclick="play(6)">6</button>
+            <button onclick="play(7)">7</button>
+            <button onclick="play(8)">8</button>
+            <button onclick="play(9)">9</button>
+            <button onclick="play(10)">10</button>
+        </section>
         <canvas id="gameZone">
 
         </canvas>
-    </article>
+        <div class="blocks">
+            <img src="assets/img/map/Numer Box=B1.png" alt="wall1">
+            <img src="assets/img/map/Numer Box=B2.png" alt="wall2">
+            <img src="assets/img/map/Numer Box=B3.png" alt="wall3">
+            <img src="assets/img/map/Numer Box=B4.png" alt="wall4">
+            <img src="assets/img/map/Numer Box=B5.png" alt="wall5">
+            <img src="assets/img/map/Numer Box=B6.png" alt="wall6">
+            <img src="assets/img/map/Numer Box=B7.png" alt="wall7">
+            <img src="assets/img/map/Numer Box=B8.png" alt="wall8">
+            <img src="assets/img/map/Numer Box=B9.png" alt="wall9">
+            <img src="assets/img/map/Numer Box=B10.png" alt="wall10">
+            <img src="assets/img/map/Numer Box=B11.png" alt="wall11">
+            <img src="assets/img/map/Numer Box=C1.png" alt="wall12">
+            <img src="assets/img/map/Numer Box=C2.png" alt="wall13">
+            <img src="assets/img/map/Numer Box=C3.png" alt="wall14">
+            <img src="assets/img/map/Numer Box=C4.png" alt="wall15">
+        </div>
+    </main>
     <script src="assets/js/main.js"></script>
     <script src="assets/js/map.js"></script>
+    <script src="assets/js/enemy.js"></script>
+    <script src="assets/js/edit.js"></script>
 </body>
 </html>
