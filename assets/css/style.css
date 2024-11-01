@@ -65,7 +65,7 @@ main .play{
 }
 
 .blocks{
-    display: flex;
+    display: none;
     flex-direction: row;
     flex-wrap: wrap;
     width: 200px;

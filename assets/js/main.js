@@ -58,8 +58,8 @@ function render() {
             );
         }
     }
-    renderCeil(map)
-    requestAnimationFrame(render)
+    renderCeil(map);
+    requestAnimationFrame(render);
     //renderEnemy()
 }
 let map = [];
@@ -73,9 +73,9 @@ function genMap() {
             })
         }
     }
-    level(player.level)
-    
+    level(player.level)    
 }
+
 
 function collision() {
     let result = map.find(
@@ -219,9 +219,13 @@ function move() {
             }
             break
     }
-    collision()
+    collision();
 }
 
 function hideElement(element) {
     element.style.display = "none"
+}
+
+function viewElement(element) {
+    element.style.display = "flex"
 }
